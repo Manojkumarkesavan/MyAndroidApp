@@ -1,0 +1,4 @@
+ClientId=780664191433-51n0e2h6v4ip94sovdtrncfdpci1bavj.apps.googleusercontent.com
+
+Gphotos:
+https://photoslibrary.googleapis.com

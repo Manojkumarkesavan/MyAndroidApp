@@ -1,5 +1,6 @@
 package com.example.myspotify.activities;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.myspotify.MainActivity;
 import com.example.myspotify.R;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashActivity extends AppCompatActivity {
 
     private static final int SPLASH_SCREEN_TIMEOUT = 2000;
@@ -28,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
         fadeOut.setInterpolator(new AccelerateInterpolator());
         fadeOut.setStartOffset(500);
         fadeOut.setDuration(1800);
-        ImageView image = findViewById(R.id.imageView);
+        ImageView image = findViewById(R.id.splash_logo);
         image.setAnimation(fadeOut);
 
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
